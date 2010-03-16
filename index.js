@@ -1,4 +1,7 @@
 $(document).ready(function() {
-  alert('hiiiiiiiieeeeeeeeeee');
+  if ($.browser.msie) {
+    alert('bahhhh, go away!');
+    $('html').css('display', 'none');
+  }
 });
 
